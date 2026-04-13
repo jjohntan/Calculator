@@ -29,6 +29,12 @@ public class Main {
                 res = nbr1 - nbr2;
                 System.out.println(res);
                 break;
+
+            // performs multiplication between numbers
+            case '*':
+                res = nbr1 * nbr2;
+                System.out.println(res);
+                break;
             default:
                 System.out.println("Invalid Operator!");
                 break;
