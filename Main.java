@@ -24,6 +24,11 @@ public class Main {
                 System.out.println(res);
                 break;
         
+            // performs subtraction between numbers
+            case '-':
+                res = nbr1 - nbr2;
+                System.out.println(res);
+                break;
             default:
                 System.out.println("Invalid Operator!");
                 break;
