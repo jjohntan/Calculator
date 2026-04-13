@@ -3,12 +3,17 @@ import java.util.Scanner;// Import the Scanner class
 public class Main {
     public static void main(String [] args)
     {
+        char opt;
         Double nbr1, nbr2, res;
         Scanner inputObj = new Scanner(System.in);// create scanner object
 
         System.out.print(">>> ");
         nbr1 = inputObj.nextDouble();// Read user input
         System.out.println(nbr1);
+
+        opt = inputObj.next().charAt(0);
+        System.out.println(opt);
+
         nbr2 = inputObj.nextDouble();
         System.out.println(nbr2);
         inputObj.close();
