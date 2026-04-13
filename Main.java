@@ -1,11 +1,12 @@
+import java.util.Scanner;// Import the Scanner class
+
 public class Main {
     public static void main(String [] args)
     {
-        if (args.length <= 0)
-        {
-            System.out.println("No argument found");
-            System.exit(1);
-        }
-        System.out.println(">>>");
+        Scanner inputObj = new Scanner(System.in);// create scanner object
+
+        Double nbr1 = inputObj.nextDouble();// Read user input
+        System.out.print(nbr1);
+        inputObj.close();
     }
 }
