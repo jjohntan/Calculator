@@ -9,13 +9,13 @@ public class Main {
 
         System.out.print(">>> ");
         nbr1 = inputObj.nextDouble();// read first number
-        System.out.println(nbr1);
+        // System.out.println(nbr1);
 
         opt = inputObj.next().charAt(0);// read operator
-        System.out.println(opt);
+        // System.out.println(opt);
 
         nbr2 = inputObj.nextDouble();// read second number
-        System.out.println(nbr2);
+        // System.out.println(nbr2);
 
         switch (opt) {
             // performs addition between numbers
@@ -35,6 +35,14 @@ public class Main {
                 res = nbr1 * nbr2;
                 System.out.println(res);
                 break;
+            // performs devision between numbers
+            case '/':
+                if (nbr2 == 0)
+                    System.exit(1);
+                res = nbr1 / nbr2;
+                System.out.println(res);
+                break;
+
             default:
                 System.out.println("Invalid Operator!");
                 break;
